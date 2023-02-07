@@ -15,7 +15,8 @@ double Pow(int number, int power)
     {
         result *= number;
     }
-    if (power > -1) return result; // (power => 0) не работает , поэтому использует (power > -1)
+    if (power > -1) return result; // (power => 0) не работает , поэтому использует (power > -1) 
+    // >= работает, урааа
     else return 1 / result; // a^(-n) = 1 / a^n
 }
 
